@@ -1,3 +1,4 @@
+// share-tunes/node_modules/react-scripts/config/paths.js
 // @remove-on-eject-begin
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
@@ -81,7 +82,7 @@ module.exports = {
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveModule(resolveApp, 'src/index'),
-  appPackageJson: resolveApp('package.json'),
+  appPackageJson: resolveApp('../package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
   appJsConfig: resolveApp('jsconfig.json'),
@@ -89,8 +90,8 @@ module.exports = {
   testsSetup: resolveModule(resolveApp, 'src/setupTests'),
   proxySetup: resolveApp('src/setupProxy.js'),
   appNodeModules: resolveApp('node_modules'),
-  publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  publicUrl: getPublicUrl(resolveApp('../package.json')),
+  servedPath: getServedPath(resolveApp('../package.json')),
 };
 
 // @remove-on-eject-begin
@@ -104,7 +105,7 @@ module.exports = {
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveModule(resolveApp, 'src/index'),
-  appPackageJson: resolveApp('package.json'),
+  appPackageJson: resolveApp('../package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
   appJsConfig: resolveApp('jsconfig.json'),
@@ -112,8 +113,8 @@ module.exports = {
   testsSetup: resolveModule(resolveApp, 'src/setupTests'),
   proxySetup: resolveApp('src/setupProxy.js'),
   appNodeModules: resolveApp('node_modules'),
-  publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  publicUrl: getPublicUrl(resolveApp('../package.json')),
+  servedPath: getServedPath(resolveApp('../package.json')),
   // These properties only exist before ejecting:
   ownPath: resolveOwn('.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3
@@ -139,7 +140,7 @@ if (
     appPublic: resolveOwn('template/public'),
     appHtml: resolveOwn('template/public/index.html'),
     appIndexJs: resolveModule(resolveOwn, 'template/src/index'),
-    appPackageJson: resolveOwn('package.json'),
+    appPackageJson: resolveOwn('../package.json'),
     appSrc: resolveOwn('template/src'),
     appTsConfig: resolveOwn('template/tsconfig.json'),
     appJsConfig: resolveOwn('template/jsconfig.json'),
@@ -147,8 +148,8 @@ if (
     testsSetup: resolveModule(resolveOwn, 'template/src/setupTests'),
     proxySetup: resolveOwn('template/src/setupProxy.js'),
     appNodeModules: resolveOwn('node_modules'),
-    publicUrl: getPublicUrl(resolveOwn('package.json')),
-    servedPath: getServedPath(resolveOwn('package.json')),
+    publicUrl: getPublicUrl(resolveOwn('../package.json')),
+    servedPath: getServedPath(resolveOwn('../package.json')),
     // These properties only exist before ejecting:
     ownPath: resolveOwn('.'),
     ownNodeModules: resolveOwn('node_modules'),
